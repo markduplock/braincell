@@ -1,0 +1,62 @@
+{% extends "layout.html" %} {% block body %}
+<main class="page-shell">
+  <section class="hero">
+    <p class="eyebrow">Last visited</p>
+    <h1>Recent</h1>
+    <p class="intro">
+      A short trail of the most recently visited wiki pages, ready for when
+      navigation history becomes part of the app.
+    </p>
+  </section>
+
+  <section class="quick-panel" aria-label="Recent page actions">
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Open Latest</h2>
+        <p>Return to the most recently visited wiki page.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Pin Recent</h2>
+        <p>Promote a useful recent page before it disappears down the stack.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Clear History</h2>
+        <p>Reset the recent list when the trail stops being useful.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Recent Page One</h2>
+        <p>The most recently opened page will appear in this slot.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Recent Page Two</h2>
+        <p>The second latest visited page will appear here.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Recent Page Three</h2>
+        <p>Another placeholder for the eventual recent page history.</p>
+      </article>
+    </a>
+  </section>
+</main>
+{% endblock %}

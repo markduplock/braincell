@@ -1,0 +1,38 @@
+{% extends "layout.html" %} {% block body %}
+<main class="page-shell">
+  <section class="hero">
+    <p class="eyebrow">Wiki entry point</p>
+    <h1>Pages</h1>
+    <p class="intro">
+      The main landing area for wiki pages, drafts, and reference notes once the
+      brain starts collecting receipts.
+    </p>
+  </section>
+
+  <section class="quick-panel" aria-label="Page actions">
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Create Page</h2>
+        <p>Open a blank wiki page and start turning thought-noise into notes.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Edit Draft</h2>
+        <p>Pick up a half-built page and make it less embarrassing.</p>
+      </article>
+    </a>
+
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Browse Index</h2>
+        <p>Scan every saved page when the wiki grows past memory alone.</p>
+      </article>
+    </a>
+  </section>
+</main>
+{% endblock %}

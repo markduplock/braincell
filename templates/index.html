@@ -1,41 +1,38 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Braincell</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-  </head>
-  <body>
-    <main class="page-shell">
-      <section class="hero">
-        <p class="eyebrow">Personal wiki</p>
-        <h1>Braincell</h1>
-        <p class="intro">
-          A private place to collect notes, ideas, links, and the bits of
-          knowledge worth keeping close.
-        </p>
-      </section>
+{% extends "layout.html" %} {% block body %}
+<main class="page-shell">
+  <section class="hero">
+    <p class="eyebrow">Personal wiki</p>
+    <h1>Braincell</h1>
+    <p class="intro">
+      A private place to collect notes, ideas, links, and the bits of knowledge
+      worth keeping close.
+    </p>
+  </section>
 
-      <section class="quick-panel" aria-label="Wiki placeholder sections">
-        <article>
-          <span class="marker"></span>
-          <h2>Pages</h2>
-          <p>Drafts, reference notes, and evergreen write-ups will live here.</p>
-        </article>
+  <section class="quick-panel" aria-label="Wiki actions">
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Create Article</h2>
+        <p>Start a new wiki page and capture the thought before it escapes.</p>
+      </article>
+    </a>
 
-        <article>
-          <span class="marker"></span>
-          <h2>Topics</h2>
-          <p>Group related notes into clean paths instead of mystery folders.</p>
-        </article>
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Edit Page</h2>
+        <p>Jump into an existing note and clean up the mess like an adult.</p>
+      </article>
+    </a>
 
-        <article>
-          <span class="marker"></span>
-          <h2>Recent</h2>
-          <p>The latest edits and ideas can surface here when the app grows.</p>
-        </article>
-      </section>
-    </main>
-  </body>
-</html>
+    <a href="#">
+      <article>
+        <span class="marker"></span>
+        <h2>Search Wiki</h2>
+        <p>Find pages by title, content, tags, or whatever future-you forgot.</p>
+      </article>
+    </a>
+  </section>
+</main>
+{% endblock %}
