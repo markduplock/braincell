@@ -4,7 +4,7 @@
 
 Braincell is a tiny local wiki with big plans.
 
-The goal is to learn HTTP, routing, forms, file storage, auth, databases, and deployment by building a small private wiki from scratch.
+The goal is to learn HTTP, routing, forms, file storage, auth, databases, and deployment by building a small private wiki using Flask
 
 ## Planned features
 
