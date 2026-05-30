@@ -1,38 +1,10 @@
-{% extends "layout.html" %} {% block body %}
+{% extends "layout.html" %}
+
+{% block body %}
 <main class="page-shell">
-  <section class="hero">
-    <p class="eyebrow">Personal wiki</p>
+  <section class="page-section">
     <h1>Braincell</h1>
-    <p class="intro">
-      A private place to collect notes, ideas, links, and the bits of knowledge
-      worth keeping close.
-    </p>
-  </section>
-
-  <section class="quick-panel" aria-label="Wiki actions">
-    <a href="#">
-      <article>
-        <span class="marker"></span>
-        <h2>Create Article</h2>
-        <p>Start a new wiki page and capture the thought before it escapes.</p>
-      </article>
-    </a>
-
-    <a href="#">
-      <article>
-        <span class="marker"></span>
-        <h2>Edit Page</h2>
-        <p>Jump into an existing note and clean up the mess like an adult.</p>
-      </article>
-    </a>
-
-    <a href="#">
-      <article>
-        <span class="marker"></span>
-        <h2>Search Wiki</h2>
-        <p>Find pages by title, content, tags, or whatever future-you forgot.</p>
-      </article>
-    </a>
+    <a class="text-link" href="{{ url_for('create') }}">Create new page</a>
   </section>
 </main>
 {% endblock %}
